@@ -1,7 +1,6 @@
-
 import pandas as pd
-from paquete.procesamiento_pdb import get_atom_coords
-from paquete.procesamiento_pdb import torsion_angle
+
+from Parcial_3.paquete import torsion_angle, get_atom_coords
 
 
 
@@ -168,4 +167,6 @@ def calculate_chi2(df):
     # Crea un DataFrame con los resultados
     chi2_df = pd.DataFrame(chi2_angles, columns=["chain", "residue num", "residue", "chi2"])
     return chi2_df
+
+
 
