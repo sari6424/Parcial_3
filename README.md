@@ -26,7 +26,7 @@ Además, asegúrate de tener BLAST+ instalado si deseas verificar la especificid
 from paquete.procesamiento_pdb import process_pdb
 
 data = process_pdb("estructura.pdb")
-print(data.head())
+print(data)
 ```
 
 ### Cálculo de ángulos de torsión
@@ -35,7 +35,7 @@ print(data.head())
 from paquete.angles_cal import calculate_angles
 
 angles_df = calculate_angles(data)
-print(angles_df.head())
+print(angles_df)
 ```
 
 ### Análisis de estructura secundaria
@@ -53,7 +53,7 @@ print(f"Hélices: {helices}%, Láminas: {laminas}%, Total residuos: {total}")
 from paquete.analisis import detect_outliers_by_iqr
 
 angles_outliers = detect_outliers_by_iqr(angles_df)
-print(angles_outliers.head())
+print(angles_outliers)
 ```
 
 ### Generación de gráficos de Ramachandran
