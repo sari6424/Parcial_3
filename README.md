@@ -19,7 +19,7 @@ Este paquete en Python permite procesar archivos PDB para calcular los ángulos 
 Este paquete requiere **Python 3.x** y las siguientes dependencias:
 
 ```bash
-pip install numpy pandas matplotlib seaborn requests os
+pip install numpy pandas matplotlib seaborn requests
 ```
 
 ---
