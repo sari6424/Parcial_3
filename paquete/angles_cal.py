@@ -1,7 +1,5 @@
+
 import pandas as pd
-
-from Parcial_3.paquete import torsion_angle, get_atom_coords
-
 
 
 def calculate_angles(df, get_atom_coords, torsion_angle):
@@ -53,5 +51,6 @@ def calculate_angles(df, get_atom_coords, torsion_angle):
     angles_df = pd.DataFrame(angles, columns=["chain", "residue num", "residue", "phi", "psi", "omega"])
 
     return angles_df
+
 
 
