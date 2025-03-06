@@ -51,6 +51,7 @@ def get_atom_coords(df, chain, residue, atom):
         return None  # Si no se encuentra el átomo, retorna None
 
 
+
 def classify_residue(residue):
     """
     Clasifica un residuo de aminoácido en una de las categorías: polar, polar cargado positivo,
@@ -118,3 +119,18 @@ def process_pdb(pdb_file):
     # Crear un DataFrame con los datos extraídos
     titles = ["atom", "residue", "chain", "residue num", "x", "y", "z"]
     return pd.DataFrame(data, columns=titles)
+
+
+def save_angles(angles_df, output_file):
+    """
+    Guarda el DataFrame con los ángulos phi, psi y omega en un archivo TSV.
+
+    Args:
+    - angles_df (pd.DataFrame): DataFrame con los ángulos calculados.
+    - output_file (str): Nombre del archivo de salida (por defecto "angles_data.tsv").
+
+    Returns:
+    - None
+    """
+    angles_df.to_csv(output_file, sep="\t", index=False)
+    print(f"Archivo guardado exitosamente en: {output_file}")
