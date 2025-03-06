@@ -16,7 +16,6 @@ Este paquete requiere Python 3.x y las siguientes dependencias:
 pip install numpy pandas matplotlib seaborn
 ```
 
-Además, asegúrate de tener BLAST+ instalado si deseas verificar la especificidad de las secuencias.
 
 ## Uso
 
